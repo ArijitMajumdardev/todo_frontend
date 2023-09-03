@@ -21,7 +21,12 @@
       display: flex;
       align-items: center;
       text-align: center;
-      > a {
+      > a{
+        @include m.styledText;
+        @include m.myButton;
+      }
+
+      .btn{
         @include m.styledText;
         @include m.myButton;
       }
