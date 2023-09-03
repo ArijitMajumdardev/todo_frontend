@@ -1,0 +1,29 @@
+@use './feature.scss' as m;
+
+
+
+.header {
+    background-color: m.$color3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 100%;
+    > div {
+      h2 {
+        text-transform: uppercase;
+        color: m.$color2;
+        font-weight: 400;
+      }
+    }
+  
+    > article {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      > a {
+        @include m.styledText;
+        @include m.myButton;
+      }
+    }
+  }

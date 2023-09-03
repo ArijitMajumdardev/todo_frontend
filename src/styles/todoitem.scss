@@ -1,0 +1,34 @@
+@use './feature.scss' as m;
+
+
+.todos{
+    background-color: m.$color2;
+    border-radius: 5px;
+    display: flex;
+    @include m.flexBox(row, center, space-between);
+    width: 100%;
+    padding: 2rem;
+
+
+
+
+    .update{
+        display: flex;
+        flex-direction: row;
+        input{
+            width: 8rem;
+            accent-color: green;
+        }
+
+        .btn{
+           
+            @include m.myButton;
+            width: 5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(235, 70, 70);
+        }
+    }
+}

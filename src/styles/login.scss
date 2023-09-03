@@ -1,0 +1,18 @@
+@use './feature.scss' as m;
+
+
+
+.login > section {
+    @include m.container(900px, unset, 2rem);
+    min-height: 80%;
+    background-color: m.$color2;
+    > form {
+      @include m.flexBox(column, center, flex-start, 2rem);
+      @include m.inputs;
+  
+      button {
+        @include m.styledText(0.9rem);
+        @include m.myButton(18.75rem, 1rem);
+      }
+    }
+  }
